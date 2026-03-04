@@ -5,6 +5,11 @@ const Gallery = () => {
     const images = [
         { src: '/gallery1.png', alt: 'Modern Office', title: 'Professional Workspace' },
         { src: '/gallery2.png', alt: 'Conference Hall', title: 'Global Summits' },
+        { src: '/gallery2.png', alt: 'Conference Hall', title: 'National Seminor1' },
+        { src: '/gallery2.png', alt: 'Conference Hall', title: 'National Seminor1' },
+        { src: '/gallery2.png', alt: 'Conference Hall', title: 'Government Award' },
+        { src: '/gallery2.png', alt: 'Conference Hall', title: 'National Seminor1' },
+        { src: '/gallery2.png', alt: 'Conference Hall', title: 'National Seminor1' },
         { src: '/profile.png', alt: 'Portrait', title: 'Executive Presence' },
     ];
 
