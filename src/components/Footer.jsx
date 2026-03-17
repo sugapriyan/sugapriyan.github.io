@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion';
 import React from 'react';
 import { Linkedin, Github, Twitter, Mail } from 'lucide-react';
 
