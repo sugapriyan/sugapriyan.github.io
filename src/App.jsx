@@ -8,6 +8,7 @@ import Gallery from './components/Gallery';
 import Achievements from './components/Achievements';
 import Works from './components/Works';
 import Footer from './components/Footer';
+import ScrollToTop from './components/ScrollToTop';
 import './App.css';
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
         <Works />
       </main>
       <Footer />
+      <ScrollToTop />
     </div>
   );
 }

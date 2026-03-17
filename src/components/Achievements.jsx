@@ -20,7 +20,7 @@ const Achievements = () => {
             title: 'Creator of Google Chrome Extension',
             organization: 'Google Chrome Extension',
             icon: <TrendingUp className="icon-gold" />,
-            desc: 'Created several Google Chrome Extensions to help people manage their tabs more efficiently.'
+            desc: 'Created several Google Chrome Extensions to help people manage their browsing experience more efficiently.'
         }
     ];
 

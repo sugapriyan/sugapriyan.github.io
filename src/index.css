@@ -1,14 +1,14 @@
 :root {
-  --primary: #1B263B;
-  --primary-hover: #0D1B2E;
-  --secondary: #415A77;
-  --bg-dark: #F8F9FA;
-  --bg-card: #FFFFFF;
-  --text-main: #0D1B2E;
-  --text-muted: #415A77;
-  --accent: #f59e0b;
-  --glass-bg: rgba(30, 41, 59, 0.7);
-  --glass-border: rgba(255, 255, 255, 0.8);
+  --primary: #FF8243;
+  --primary-hover: #E06C35;
+  --secondary: #069494;
+  --bg-dark: #071313;
+  --bg-card: rgba(255, 255, 255, 0.05);
+  --text-main: #FFFFFF;
+  --text-muted: #FFC0CB;
+  --accent: #FCE883;
+  --glass-bg: rgba(255, 255, 255, 0.05);
+  --glass-border: rgba(255, 255, 255, 0.15);
   --font-heading: 'Outfit', sans-serif;
   --font-body: 'Inter', sans-serif;
   --transition-fast: 0.2s ease;
@@ -58,8 +58,8 @@ button {
 /* Glassmorphism utility */
 .glass {
   background: var(--glass-bg);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
   border: 1px solid var(--glass-border);
   border-radius: 12px;
 }
@@ -96,22 +96,7 @@ button {
   border-radius: 2px;
 }
 
-/* Profile Photo Placeholder logic - user will replace */
-.profile-img-container {
-  width: 250px;
-  height: 250px;
-  border-radius: 50%;
-  overflow: hidden;
-  border: 4px solid var(--primary);
-  box-shadow: 0 0 30px rgba(37, 99, 235, 0.3);
-  position: relative;
-}
 
-.profile-img-container img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
 
 /* Timeline specific styles */
 .timeline {

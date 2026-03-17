@@ -4,21 +4,21 @@ import { motion } from 'framer-motion';
 const Experience = () => {
     const experiences = [
         {
-            company: 'Current Organization',
-            role: 'Senior Lead / Principal Specialist',
-            period: '2019 - Present',
-            description: 'Leading global teams to deliver mission-critical infrastructure and software solutions.'
+            company: 'Muthu Soft Labs Pvt Ltd',
+            role: 'Project Relationship Manager',
+            period: '2023 - Present',
+            description: 'Managing project execution for Banking and various Government initiatives with focus on security, compliance and reliability.'
         },
         {
-            company: 'Mid-Career Venture',
-            role: 'Senior Project Manager',
-            period: '2014 - 2019',
-            description: 'Scaled operations by 40% and implemented lean methodologies across the department.'
+            company: 'NIC (Rural Development & Panchayat Raj Department)',
+            role: 'State Project Manager',
+            period: '2017 - 2023',
+            description: 'Co-ordinated and implemented various new projects in the State Rural Development Department.'
         },
         {
-            company: 'Early Career Growth',
-            role: 'System Analyst',
-            period: '2009 - 2014',
+            company: 'NIC (Rural Development & Panchayat Raj Department)',
+            role: 'Assistant Programmer',
+            period: '2012 - 2017',
             description: 'Started the journey in professional excellence, focusing on technical implementation and client satisfaction.'
         }
     ];
