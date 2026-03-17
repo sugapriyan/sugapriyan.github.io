@@ -1,5 +1,4 @@
 import React from 'react';
-import { motion } from 'framer-motion';
 import { Award, Briefcase, ChevronRight } from 'lucide-react';
 
 const Hero = () => {

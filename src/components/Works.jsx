@@ -1,5 +1,4 @@
 import React from 'react';
-import { motion } from 'framer-motion';
 import { Briefcase, Code, Globe } from 'lucide-react';
 
 const Works = () => {
