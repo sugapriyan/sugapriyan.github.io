@@ -8,19 +8,38 @@ const Works = () => {
             title: 'Enterprise ERP System',
             category: 'Software Development',
             icon: <Code size={24} />,
-            desc: 'Architected a modular ERP for a Fortune 500 client, improving data flow efficiency.'
+            desc: 'Architected a modular ERP for a Fortune 500 client, improving data flow efficiency.',
+            skills: [
+                { name: 'Systems Architecture', type: 'technical' },
+                { name: 'Database Design', type: 'technical' },
+                { name: 'React.js', type: 'tools' },
+                { name: 'SQL', type: 'tools' },
+                { name: 'Enterprise Software', type: 'technical' }
+            ]
         },
         {
             title: 'Global Supply Chain Audit',
             category: 'Project Management',
             icon: <Briefcase size={24} />,
-            desc: 'Led a cross-continental team to audit and optimize supply chain routes across 12 countries.'
+            desc: 'Led a cross-continental team to audit and optimize supply chain routes across 12 countries.',
+            skills: [
+                { name: 'Logistics Management', type: 'leadership' },
+                { name: 'Risk Assessment', type: 'leadership' },
+                { name: 'Operations Optimization', type: 'technical' },
+                { name: 'Cross-cultural Leadership', type: 'leadership' }
+            ]
         },
         {
             title: 'Digital Transformation 2.0',
             category: 'Strategic Consulting',
             icon: <Globe size={24} />,
-            desc: 'Consulted on the migration of legacy systems to a modern cloud-native architecture.'
+            desc: 'Consulted on the migration of legacy systems to a modern cloud-native architecture.',
+            skills: [
+                { name: 'Cloud Migration', type: 'technical' },
+                { name: 'Legacy Modernization', type: 'technical' },
+                { name: 'Systems Integration', type: 'technical' },
+                { name: 'Strategic Consulting', type: 'leadership' }
+            ]
         }
     ];
 
@@ -52,6 +71,21 @@ const Works = () => {
                         </div>
                         <h3>{work.title}</h3>
                         <p>{work.desc}</p>
+                        
+                        <div className="skill-badges-container">
+                            {work.skills.map((skill, sIdx) => (
+                                <motion.span 
+                                    key={sIdx} 
+                                    className={`skill-badge ${skill.type}`}
+                                    initial={{ opacity: 0, scale: 0.8 }}
+                                    whileInView={{ opacity: 1, scale: 1 }}
+                                    transition={{ duration: 0.4, delay: (index * 0.1) + (sIdx * 0.05) }}
+                                    viewport={{ once: true }}
+                                >
+                                    {skill.name}
+                                </motion.span>
+                            ))}
+                        </div>
                     </motion.div>
                 ))}
             </div>

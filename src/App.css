@@ -704,6 +704,62 @@
   background: var(--primary-hover);
   box-shadow: 0 10px 25px rgba(255, 130, 67, 0.5);
 }
+/* Skill Badges */
+.skill-badges-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 15px;
+}
+
+.skill-badge {
+  font-size: 0.72rem;
+  font-weight: 600;
+  padding: 4px 10px;
+  border-radius: 20px;
+  border: 1px solid var(--glass-border);
+  background: var(--glass-bg);
+  color: white;
+  transition: transform var(--transition-fast), background-color var(--transition-fast), box-shadow var(--transition-fast);
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.skill-badge:hover {
+  transform: translateY(-2px) scale(1.05);
+}
+
+.skill-badge.leadership {
+  border-color: var(--primary);
+  background-color: color-mix(in srgb, var(--primary) 10%, transparent);
+}
+
+.skill-badge.leadership:hover {
+  box-shadow: 0 0 10px rgba(255, 130, 67, 0.4);
+  background-color: color-mix(in srgb, var(--primary) 20%, transparent);
+}
+
+.skill-badge.technical {
+  border-color: var(--secondary);
+  background-color: color-mix(in srgb, var(--secondary) 10%, transparent);
+}
+
+.skill-badge.technical:hover {
+  box-shadow: 0 0 10px rgba(6, 148, 148, 0.4);
+  background-color: color-mix(in srgb, var(--secondary) 20%, transparent);
+}
+
+.skill-badge.tools {
+  border-color: var(--accent);
+  background-color: color-mix(in srgb, var(--accent) 10%, transparent);
+  color: #fff;
+}
+
+.skill-badge.tools:hover {
+  box-shadow: 0 0 10px rgba(252, 232, 131, 0.4);
+  background-color: color-mix(in srgb, var(--accent) 20%, transparent);
+}
 
 /* Responsive */
 @media (max-width: 768px) {
