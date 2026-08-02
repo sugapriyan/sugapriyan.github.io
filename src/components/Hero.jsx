@@ -8,29 +8,31 @@ const Hero = () => {
             <div className="hero-container">
                 <motion.div
                     className="hero-text"
-                    initial={{ opacity: 0, x: -50 }}
-                    whileInView={{ opacity: 1, x: 0 }}
+                    initial={{ opacity: 0, y: 30 }}
+                    whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8 }}
-                    viewport={{ once: true }}
+                    viewport={{ once: true, amount: 0.1 }}
                 >
-                    <motion.div
+                    <motion.a
+                        href="#contact"
                         className="hero-badge"
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ delay: 0.2 }}
                     >
                         <span className="badge-dot"></span> Available for Opportunities
-                    </motion.div>
+                    </motion.a>
 
                     <h1 className="hero-title">
-                        Driving Innovation as a{' '}
-                        <span>Senior Executive</span>
+                        Sugapriyan
                     </h1>
+                    <h2 className="hero-subheading">
+                        Senior Executive / Project Relationship Manager
+                    </h2>
 
                     <p className="hero-description">
-                        With over 15 years of proven excellence, I specialize in transforming
-                        complex challenges into scalable, world-class solutions. Driven by academic rigor
-                        and strategic vision.
+                        15+ years delivering e-governance and banking IT projects for government and
+                        enterprise clients — from requirements to production.
                     </p>
 
                     <div className="hero-actions">
@@ -57,13 +59,13 @@ const Hero = () => {
                         initial={{ opacity: 0, scale: 0.8 }}
                         whileInView={{ opacity: 1, scale: 1 }}
                         transition={{ duration: 0.8 }}
-                        viewport={{ once: true }}
+                        viewport={{ once: true, amount: 0.1 }}
                     >
                         {/* Glowing background blob */}
                         <div className="glow-blob"></div>
 
                         <div className="profile-img-container">
-                            <img src="/profile.png" alt="Profile" />
+                            <img src="/profile.png" alt="Sugapriyan Profile" />
                         </div>
 
                         {/* Floating Elements */}

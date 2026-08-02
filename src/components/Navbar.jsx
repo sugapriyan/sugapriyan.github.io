@@ -21,6 +21,7 @@ const Navbar = () => {
         { name: 'Gallery', href: '#gallery' },
         { name: 'Achievements', href: '#achievements' },
         { name: 'Works', href: '#works' },
+        { name: 'Contact', href: '#contact' },
     ];
 
     return (
@@ -31,7 +32,7 @@ const Navbar = () => {
                     initial={{ opacity: 0, x: -20 }}
                     animate={{ opacity: 1, x: 0 }}
                 >
-                    <span>MY</span>PORTFOLIO
+                    <span>SUGA</span>PRIYAN
                 </motion.div>
 
                 {/* Desktop Links */}

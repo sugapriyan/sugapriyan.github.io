@@ -7,6 +7,7 @@ import Experience from './components/Experience';
 import Gallery from './components/Gallery';
 import Achievements from './components/Achievements';
 import Works from './components/Works';
+import Contact from './components/Contact';
 import Footer from './components/Footer';
 import ScrollToTop from './components/ScrollToTop';
 import './App.css';
@@ -22,6 +23,7 @@ function App() {
         <Gallery />
         <Achievements />
         <Works />
+        <Contact />
       </main>
       <Footer />
       <ScrollToTop />

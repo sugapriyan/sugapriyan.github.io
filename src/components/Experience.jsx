@@ -48,7 +48,7 @@ const Experience = () => {
             <motion.h2
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
-                viewport={{ once: true }}
+                viewport={{ once: true, amount: 0.1 }}
             >
                 Career Journey (2009 – Present)
             </motion.h2>
@@ -60,25 +60,25 @@ const Experience = () => {
                         <div className="timeline-dot"></div>
                         <motion.div
                             className={`timeline-content glass ${index % 2 === 0 ? 'left' : 'right'}`}
-                            initial={{ opacity: 0, x: index % 2 === 0 ? -50 : 50 }}
-                            whileInView={{ opacity: 1, x: 0 }}
+                            initial={{ opacity: 0, y: 30 }}
+                            whileInView={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.6, delay: index * 0.1 }}
-                            viewport={{ once: true }}
+                            viewport={{ once: true, amount: 0.1 }}
                         >
                             <span className="period">{exp.period}</span>
                             <h3>{exp.role}</h3>
                             <h4>{exp.company}</h4>
                             <p>{exp.description}</p>
-                            
+
                             <div className="skill-badges-container">
                                 {exp.skills.map((skill, sIdx) => (
-                                    <motion.span 
-                                        key={sIdx} 
+                                    <motion.span
+                                        key={sIdx}
                                         className={`skill-badge ${skill.type}`}
                                         initial={{ opacity: 0, scale: 0.8 }}
                                         whileInView={{ opacity: 1, scale: 1 }}
                                         transition={{ duration: 0.4, delay: (index * 0.1) + (sIdx * 0.05) }}
-                                        viewport={{ once: true }}
+                                        viewport={{ once: true, amount: 0.1 }}
                                     >
                                         {skill.name}
                                     </motion.span>

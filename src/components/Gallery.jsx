@@ -6,20 +6,10 @@ const Gallery = () => {
     const [selectedImg, setSelectedImg] = useState(null);
 
     const images = [
-        { src: '/gallery1.png', alt: 'Modern Office', title: 'Professional Workspace' },
-        { src: '/gallery2.png', alt: 'Conference Hall', title: 'Global Summits' },
-        { src: '/gallery2.png', alt: 'Conference Hall', title: 'National Seminor1' },
-        { src: '/gallery2.png', alt: 'Conference Hall', title: 'National Seminor1' },
-        { src: '/gallery2.png', alt: 'Conference Hall', title: 'Government Award' },
-        { src: '/gallery2.png', alt: 'Conference Hall', title: 'National Seminor1' },
-        { src: '/gallery2.png', alt: 'Conference Hall', title: 'National Seminor1' },
-        { src: '/profile.png', alt: 'Portrait', title: 'Executive Presence' },
-        { src: '/gallery2.png', alt: 'Conference Hall', title: 'Global Summits' },
-        { src: '/profile.png', alt: 'Portrait', title: 'Executive Presence' },
-        { src: '/gallery2.png', alt: 'Conference Hall', title: 'Global Summits' },
-        { src: '/profile.png', alt: 'Portrait', title: 'Executive Presence' },
-        { src: '/gallery2.png', alt: 'Conference Hall', title: 'Global Summits' },
-        { src: '/profile.png', alt: 'Portrait', title: 'Executive Presence' },
+        { src: '/gallery1.png', alt: 'Professional Workspace', title: 'Professional Workspace' },
+        { src: '/gallery2.png', alt: 'Conference Hall', title: 'National Seminar' },
+        { src: '/gallery2.png', alt: 'Government Event', title: 'Government Recognition' },
+        { src: '/profile.png', alt: 'Sugapriyan Executive Photo', title: 'Executive Leadership' },
     ];
 
     return (
@@ -27,7 +17,7 @@ const Gallery = () => {
             <motion.h2
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
-                viewport={{ once: true }}
+                viewport={{ once: true, amount: 0.05 }}
             >
                 Photo Highlights
             </motion.h2>
@@ -42,7 +32,7 @@ const Gallery = () => {
                         initial={{ opacity: 0, y: 30 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.5, delay: index * 0.1 }}
-                        viewport={{ once: true }}
+                        viewport={{ once: true, amount: 0.05 }}
                         onClick={() => setSelectedImg(img)}
                     >
                         <img src={img.src} alt={img.alt} />

@@ -29,7 +29,7 @@ const Achievements = () => {
             <motion.h2
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
-                viewport={{ once: true }}
+                viewport={{ once: true, amount: 0.1 }}
             >
                 Achievements
             </motion.h2>
@@ -44,7 +44,7 @@ const Achievements = () => {
                         initial={{ opacity: 0, scale: 0.9 }}
                         whileInView={{ opacity: 1, scale: 1 }}
                         transition={{ delay: index * 0.1 }}
-                        viewport={{ once: true }}
+                        viewport={{ once: true, amount: 0.1 }}
                     >
                         <div className="achievement-icon">{item.icon}</div>
                         <h3>{item.title}</h3>

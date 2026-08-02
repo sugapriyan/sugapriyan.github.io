@@ -23,7 +23,7 @@ const Education = () => {
             <motion.h2
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
-                viewport={{ once: true }}
+                viewport={{ once: true, amount: 0.1 }}
             >
                 Academic Background
             </motion.h2>
@@ -38,7 +38,7 @@ const Education = () => {
                         initial={{ opacity: 0, y: 30 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         transition={{ delay: index * 0.2 }}
-                        viewport={{ once: true }}
+                        viewport={{ once: true, amount: 0.1 }}
                     >
                         <div className="edu-icon">
                             <GraduationCap size={32} color="#2563eb" />
